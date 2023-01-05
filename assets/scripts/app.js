@@ -2,9 +2,14 @@
 let currentResult = 0;
 let calculationDescription;
 
+function getUserNumberInput() {
+    return +userInput.value;
+}
+
 function add() {
-  currentResult = currentResult + userInput.value;
-  calculationDescription = "Description";
+    const enteredNumber = getUserNumberInput();
+  calculationDescription = `Description: ${currentResult} + ${enteredNumber}`;
+  currentResult = currentResult + enteredNumber;
   outputResult(currentResult, calculationDescription);
   //   alert(`The result is ${result}`);
   // return result;
