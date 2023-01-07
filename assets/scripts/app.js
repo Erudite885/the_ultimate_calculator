@@ -12,11 +12,7 @@ function createAndOutput(operator, resultBeforeCalc, calcNumber) {
   outputResult(currentResult, calculationDescription);
 }
 
-function writeToLog(
-    operatorIdentifier, 
-    prevResult, 
-    opNum, 
-    newResult) {
+function writeToLog(operatorIdentifier, prevResult, opNum, newResult) {
   const logEntry = {
     operation: operatorIdentifier,
     prevResult: prevResult,
